@@ -22,19 +22,19 @@ def div(a,b):
     answer= a / b
     print (str(a) + " / " + str(b) + " = " + str(answer))
     
+while True:
+   a= int(input ("Please enter your first number :"))
+   options= input (" Please select + , / , * or  -  : ")
+   b= int(input ("Please enter your second number :"))
 
-a= int(input ("Please enter your first number :"))
-options= input (" Please select + , / , * or  -  : ")
-b= int(input ("Please enter your second number :"))
-
-if options=="+":
+   if options=="+":
     add(a,b)
-elif options=="-":
+   elif options=="-":
     add(a,b)
-elif options=="*":
+   elif options=="*":
     mul(a,b)
-elif options=="/":
+   elif options=="/":
     div(a,b)
-else:
+   else:
     print("Please enter correct option  ( + , * , - , / )")
     
